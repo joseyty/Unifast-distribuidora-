@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+}
+
+:root{
+    --primary-color: #ff1493;
+    --secondary-color: #ffb3d9;
+    --accent-color: #c71585;
+    --background-color: #fff;
+    --text-color: #333;
+    --border-color: #ff69b4;
+    --font-family: Arial, sans-serif;
+    --font-size-base: 16px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: var(--background-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    color: var(--text-color);
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+header li:hover{
+    color: var(--primary-color);
+}
+
+h1{
+    margin: 0;
+    font-size: 28px;
+    display: block;
+}
+
+h2::after{
+    content: " ";
+
+}
+
+button{
+    background-color: #ff69b4;
+    border-radius: 30px;
+    
+}
+
+button:hover{
+    background-color: #ff1493;
+    color: #ff69b4;
+}
+
+
+
+.trocar{
+   animation: trocar 2s ease-in-out infinite;
+
+}
+
+@keyframes trocar{
+    0%{
+        scale: 1;
+        color: var(--primary-color);
+    }
+    50%{
+        scale: 1.1;
+        color: var(--secondary-color);
+    }
+    100%{
+        scale: 1;
+        color: var(--border-color);
+    }
+}
