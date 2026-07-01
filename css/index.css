@@ -72,6 +72,11 @@ button:hover{
    animation: trocar 2s ease-in-out infinite;
 
 }
+img{
+    width: 100%;
+    height: auto;
+    background-color: #333;
+}
 
 @keyframes trocar{
     0%{
